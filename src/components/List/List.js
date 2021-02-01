@@ -16,7 +16,7 @@ class List extends React.Component {
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
     columns: PropTypes.array,
-    source: PropTypes.string,
+    image: PropTypes.string,
   }
 
   // default parameter values
@@ -43,7 +43,8 @@ class List extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-        <Hero titleText={this.props.title} imageSource={this.props.source} />
+        <Hero titleText={this.props.title} imageSource={this.props.image} />
+        { console.log('image props', this.props.image) }
         <div className={styles.description}>
           {ReactHtmlParser(this.props.description)}
         </div>
