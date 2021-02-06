@@ -1,12 +1,18 @@
 import {connect} from 'react-redux';
 import List from './List';
-
-// filter all columns in this list
-//zwraca tablicę, zawierającą wyłącznie kolumny o listId pasującym do wyświetlanej listy.
-export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId == listId);
+import {getColumnsForList} from '../../redux/columnsRedux';
+import {createActionAddColumn} from '../../redux/columnsRedux';
 
 const mapStateToProps = (state, props) => ({
   columns: getColumnsForList(state, props.id),
 });
 
-export default connect(mapStateToProps)(List);
+const mapDispatchToProps = (dispatch, props) => ({
+  addColumn: title => dispatch(createActionAddColumn({
+    listId: props.id,
+    title,
+  })),
+});
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(List);
