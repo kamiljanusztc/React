@@ -12,6 +12,19 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  iconLogo: 'project-diagram',
+};
+
+export const pageFAQ = {
+  title: 'FAQ',
+  image: 'https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-845451.jpg&fm=jpg', 
+  description: 'Do you have a question for us? We are happy to help you! Choose a topic below and find specifics answers about our product, deliveries, return policy and much more.',
+};
+
+export const pageInfo = {
+  title: 'Useful info',
+  image: 'https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-845451.jpg&fm=jpg', 
+  description: 'Here you will find all the useful info. Choose a topic.',
 };
 
 export const pageContents = {
