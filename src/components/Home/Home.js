@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.scss';
 import PropTypes from 'prop-types';
-import List from '../List/ListContainer.js';
+import ListLink from '../ListLink/ListLink.js';
 import Search from '../Search/SearchContainer.js';
 
 class Home extends React.Component {
@@ -21,7 +21,7 @@ class Home extends React.Component {
         <h2 className={styles.subtitle}>{subtitle}</h2>
         <Search />
         {lists.map(listData => (
-          <List key={listData.id} {...listData} />
+          <ListLink key={listData.id} {...listData} />
         ))}
       </main>
     );
