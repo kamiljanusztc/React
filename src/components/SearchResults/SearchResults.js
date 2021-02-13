@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../Column/Column.scss';
+import styles from './SearchResults.scss';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon.js';
@@ -16,6 +16,8 @@ class SearchResults extends React.Component {
 
   static defaultProps = {
     icon: settings.defaultColumnIcon,
+    title: 'Search results ',
+
   }
 
   render() {
