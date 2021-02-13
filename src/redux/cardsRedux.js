@@ -1,7 +1,8 @@
 import shortid from 'shortid';
 
 // selectors
-export const getCardsForColumn = ({cards, searchString}, columnId) => cards.filter(card => card.columnId == columnId && new RegExp(searchString, 'i').test(card.title)); // ostatni warunek sprawdza czy tytul karty pasuje do wyszukiwanej frazy
+export const getCardsForColumn = ({ cards }, columnId) => cards.filter(card => card.columnId == columnId);
+export const getSearchedCardsForColumn = ({ cards }, searchString) => cards.filter(card => new RegExp(searchString, 'i').test(card.title)); //sprawdza czy tytul karty pasuje do wyszukiwanej frazy
 
 // action name creator
 const reducerName = 'cards'; // w stalej zapisana jest nazwa wlasciwosci stanu

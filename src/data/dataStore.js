@@ -17,13 +17,13 @@ export const settings = {
 
 export const pageFAQ = {
   title: 'FAQ',
-  image: 'https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-845451.jpg&fm=jpg', 
+  image: 'https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-845451.jpg&fm=jpg',
   description: 'Do you have a question for us? We are happy to help you! Choose a topic below and find specifics answers about our product, deliveries, return policy and much more.',
 };
 
 export const pageInfo = {
   title: 'Useful info',
-  image: 'https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-845451.jpg&fm=jpg', 
+  image: 'https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-845451.jpg&fm=jpg',
   description: 'Here you will find all the useful info. Choose a topic.',
 };
 
@@ -88,7 +88,19 @@ export const listData = {
 const lists = [
   {
     id: 'list-1',
-    title: 'Things to do <sup>soon!</sup>',
+    title: 'Current task <sup>active</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-2',
+    title: 'My tasks <sup>individual</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>soon</sup>',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
@@ -155,7 +167,7 @@ const cards = [
 ];
 
 const initialStoreData = {
-  app: {...pageContents},
+  app: { ...pageContents },
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
